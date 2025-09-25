@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Autocare Services</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #1E88E5, #1565C0);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #1E88E5;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('images/workshop-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 2.5rem;
+      z-index: 1;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Main Content */
+    main {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    main h2 {
+      margin: 20px 0 10px;
+      color: #1565C0;
+      border-left: 5px solid #1E88E5;
+      padding-left: 10px;
+    }
+
+    main p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    /* About Image */
+    .about-img {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img:hover {
+      transform: scale(1.03);
+    }
+
+    /* List Styling */
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    ul li {
+      background: url('images/check-icon.png') no-repeat left center;
+      background-size: 20px;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #1E88E5, #1565C0);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 30px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        height: 200px;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+      .hero h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Autocare Services</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>About Our Journey</h1>
+  </section>
+
+  <main>
+    <img src="Team.webp" alt="Our Workshop Team" class="about-img">
+
+    <h2>Our Story</h2>
+    <p>Founded in 2012, <strong>AutoCare Services</strong> began as a small family-owned garage with a simple goal – to provide trustworthy and affordable auto repair services to our community. Over the years, our dedication to quality service and customer satisfaction has transformed us into a trusted automotive service provider in the region.</p>
+    
+    <h2>Our Mission</h2>
+    <p>To deliver high-quality and reliable automotive services while building long-term trust with our customers through honesty, transparency, and professionalism.</p>
+    
+    <h2>Our Vision</h2>
+    <p>We aim to be the leading automotive service center, setting the benchmark for excellent car care, cutting-edge diagnostics, and outstanding customer experience.</p>
+    
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Experienced and certified mechanics</li>
+      <li>Modern diagnostic tools and equipment</li>
+      <li>Affordable and transparent pricing</li>
+      <li>Fast and reliable service turnaround</li>
+      <li>Friendly customer support</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dambuza Rikhotso. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
